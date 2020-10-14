@@ -1,0 +1,26 @@
+{
+    "name": "donmhico/universal-wp",
+    "authors": [
+        {
+            "name": "Michael Joseph Panaga",
+            "email": "donmhico@gmail.com"
+        }
+    ],
+    "require": {
+        "wp-graphql/wp-graphql": "^0.13.3",
+        "composer/installers": "^1.9"
+    },
+    "extra": {
+      "installer-paths": {
+        "plugins/{$name}/": [
+            "type:wordpress-dropin", "type:wordpress-plugin"
+        ],
+        "mu-plugins/{$name}/": [
+            "type:wordpress-muplugin"
+        ],
+        "themes/{$name}/": [
+            "type:wordpress-theme"
+        ]
+      }
+    }
+}
